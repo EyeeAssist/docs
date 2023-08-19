@@ -14,7 +14,7 @@ export default defineConfig({
 				{
 					label: 'Guides',
 					items: [
-						{ label: 'Example Guide', link: '/docs/guides/example/' },
+						{ label: 'Example Guide', link: '/guides/example/' },
 					],
 				},
 				{
