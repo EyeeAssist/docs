@@ -12,13 +12,13 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'User',
 					items: [
-						{ label: 'Example Guide', link: '/guides/example/' },
+						{ label: 'Guide', link: '/users/guide/' },
 					],
 				},
 				{
-					label: 'Reference',
+					label: 'Developer',
 					autogenerate: { directory: 'reference' },
 				},
 			],
