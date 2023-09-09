@@ -1,11 +1,14 @@
 ---
-title: Example Reference
-description: A reference page in my new Starlight docs site.
+title: Installation guide 
+description: Library installation steps
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.
+To install the library in a web project it is necessary to paste this tag in your web project.
 
-## Further reading
+```html
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+<script src="https://cdn.jsdelivr.net/gh/EyeeAssist/library@main/public/bundle.js"></script>
+
+```
+
+By default the tools will be enabled for all users. 
