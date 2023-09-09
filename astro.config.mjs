@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/docs',
 	integrations: [
 		starlight({
-			title: 'EyeAssist Documentation',
+			title: 'EyeeAssist',
 			social: {
 				github: 'https://github.com/EyeeAssist/library',
 			},
