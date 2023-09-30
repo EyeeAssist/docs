@@ -20,4 +20,4 @@ These are the functionalities that the library has, which can be activated throu
 
 To display the drop-down menu, click and select the type of tools that suits your needs
 
-![Fly Menu](../../../assets/captura-menu.png)
+![Fly Menu](../../../assets/menu-principal.png)
