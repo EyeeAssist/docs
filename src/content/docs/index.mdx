@@ -1,9 +1,9 @@
 ---
-title: Welcome to EyeeAssist
+title: Welcome to EyeAssist
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Accessibility tool for people with visual impairment 
+  tagline: Accessibility tools for people with visual impairment 
   image:
     file: ../../assets/logo-ojo.svg
   actions:
@@ -16,6 +16,13 @@ hero:
       icon: external
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import FuncionalityCard from './components/funcionality/FuncionalityCard.astro';
 
-## Landing page 
+## Disabilities we cover
+Eyeassist offers the following features to provide accessibility for the visually impaired.
+
+<div>
+  <FuncionalityCard title='Zoom' description="Keyboard shortcut [Ctrl + Backspace]." tool="zoom"></FuncionalityCard>
+  <FuncionalityCard title='Filters' description="Application of filters for contrast enhancement." tool="filter"></FuncionalityCard>
+  <FuncionalityCard title='ScreenReader' description="Keyboard shortcut [Ctrl + Space]." tool="reader"></FuncionalityCard>
+</div>
