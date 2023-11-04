@@ -1,5 +1,5 @@
 ---
-title: Welcome to EyeAssist
+title: EyeAssist
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
@@ -22,7 +22,51 @@ import FuncionalityCard from './components/funcionality/FuncionalityCard.astro';
 Eyeassist offers the following features to provide accessibility for the visually impaired.
 
 <div>
-  <FuncionalityCard title='Zoom' description="Keyboard shortcut [Ctrl + Backspace]." tool="zoom"></FuncionalityCard>
-  <FuncionalityCard title='Filters' description="Application of filters for contrast enhancement." tool="filter"></FuncionalityCard>
-  <FuncionalityCard title='ScreenReader' description="Keyboard shortcut [Ctrl + Space]." tool="reader"></FuncionalityCard>
+  <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); align-items: center; justify-content: center; margin: 0; margin-bottom: 10px; padding: 10px;">
+    <div style="width: 100%; display: flex; align-items: center;  align-content: center; margin: 0;">
+      <ul>
+        <li>
+          #### People with low vision
+        </li>
+        <li>
+          #### Partial blindness 
+        </li>
+      </ul>
+    </div>
+    <div style="width: 100%; display: flex; align-items: center; justify-items: center; justify-content: center; align-content: center; margin: 0;">
+        <FuncionalityCard title='Zoom' description="Activation of screen zoom with shortcut [Ctrl + Backspace]." tool="zoom"></FuncionalityCard>
+    </div>
+  </div>
+
+  <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); align-items: center; justify-content: center; margin: 0; margin-bottom: 10px; padding: 10px;">
+    <div style="width: 100%; display: flex; align-items: center;  align-content: center; margin: 0;">
+      <ul>
+        <li>
+          #### Protanopia
+        </li>
+        <li>
+          #### Deuteranopia
+        </li>
+        <li>
+          #### Tritanopia
+        </li>
+      </ul>
+    </div>
+    <div style="width: 100%; display: flex; align-items: center; justify-items: center; justify-content: center; align-content: center; margin: 0;">
+        <FuncionalityCard title='Filters' description="Application of filters for contrast enhancement." tool="filter"></FuncionalityCard>
+    </div>
+  </div>
+
+  <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); align-items: center; justify-content: center; margin: 0; margin-bottom: 10px; padding: 10px;">
+    <div style="width: 100%; display: flex; align-items: center;  align-content: center; margin: 0;">
+      <ul>
+        <li>
+           #### Blind people
+        </li>
+      </ul>
+    </div>
+    <div style="width: 100%; display: flex; align-items: center; justify-items: center; justify-content: center; align-content: center; margin: 0;">
+        <FuncionalityCard title='ScreenReader' description="Activate a screen reader with shortcut [Ctrl + Space]." tool="reader"></FuncionalityCard>
+    </div>
+  </div>
 </div>
