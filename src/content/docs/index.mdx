@@ -3,70 +3,78 @@ title: EyeAssist
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Accessibility tools for people with visual impairment 
+  tagline: Herramientas de accesibilidad para personas con discapacidad visual 
   image:
     file: ../../assets/logo-ojo.svg
   actions:
-    - text: Example Guide
+    - text: Documentación 
       link: /docs/users/guide/
       icon: right-arrow
       variant: primary
-    - text: Enter to EyeAssist library repository
+    - text: Entrar en el repositorio de bibliotecas EyeAssist
       link: https://github.com/EyeeAssist/library
       icon: external
 ---
 
 import FuncionalityCard from './components/funcionality/FuncionalityCard.astro';
 
-## Disabilities we cover
-Eyeassist offers the following features to provide accessibility for the visually impaired.
+## Interfaz principal
+
+Eyeassist sigue las directrices WCAG para la implementación de su interfaz. Para garantizar su accesibilidad.
+
+![Fly Menu](../../assets/interfaz-principal.png)
+
+## Discapacidades que cubrimos
+Eyeassist ofrece las siguientes características para facilitar la accesibilidad de las personas que entran en el código de clasificación CIE11 9D90 Deficiencia visual, incluida la ceguera y el código 9D44 Deficiencia de la visión de los colores.
+
+## Herramientas gratuitas y discapacidades que cubren
+
+Eyeassist es una biblioteca de código abierto que proporciona las siguientes funcionalidades, dependiendo del tipo de discapacidad visual que tenga el usuario.
 
 <div>
   <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); align-items: center; justify-content: center; margin: 0; margin-bottom: 10px; padding: 10px;">
     <div style="width: 100%; display: flex; align-items: center;  align-content: center; margin: 0;">
       <ul>
-        <li>
-          #### People with low vision
-        </li>
-        <li>
-          #### Partial blindness 
-        </li>
+          #### 9D90.1 Deterioro leve de la visión
+          #### 9D90.7 Deterioro de la visión de cerca
       </ul>
     </div>
     <div style="width: 100%; display: flex; align-items: center; justify-items: center; justify-content: center; align-content: center; margin: 0;">
-        <FuncionalityCard title='Zoom' description="Activation of screen zoom with shortcut [Ctrl + Backspace]." tool="zoom"></FuncionalityCard>
+        <FuncionalityCard title='Zoom' description="Activación del zoom de pantalla con el atajo [Ctrl + Retroceso]." tool="zoom"></FuncionalityCard>
     </div>
   </div>
 
   <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); align-items: center; justify-content: center; margin: 0; margin-bottom: 10px; padding: 10px;">
     <div style="width: 100%; display: flex; align-items: center;  align-content: center; margin: 0;">
       <ul>
-        <li>
-          #### Protanopia
-        </li>
-        <li>
-          #### Deuteranopia
-        </li>
-        <li>
-          #### Tritanopia
-        </li>
+          #### 9D44 Deterioro de la visión cromática
+          #### - Protanopia
+          #### - Deuteranopia
+          #### - Tritanopia
       </ul>
     </div>
     <div style="width: 100%; display: flex; align-items: center; justify-items: center; justify-content: center; align-content: center; margin: 0;">
-        <FuncionalityCard title='Filters' description="Application of filters for contrast enhancement." tool="filter"></FuncionalityCard>
+        <FuncionalityCard title='Filters' description="Aplicación de filtros para la mejora del contraste." tool="filter"></FuncionalityCard>
     </div>
   </div>
 
   <div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); align-items: center; justify-content: center; margin: 0; margin-bottom: 10px; padding: 10px;">
     <div style="width: 100%; display: flex; align-items: center;  align-content: center; margin: 0;">
       <ul>
-        <li>
-           #### Blind people
-        </li>
+           #### 9D90.2 Deficiencia visual moderada
+           #### 9D90.3 Deterioro grave de la visión
+           #### 9D90.6 Ceguera
       </ul>
     </div>
     <div style="width: 100%; display: flex; align-items: center; justify-items: center; justify-content: center; align-content: center; margin: 0;">
-        <FuncionalityCard title='ScreenReader' description="Activate a screen reader with shortcut [Ctrl + Space]." tool="reader"></FuncionalityCard>
+        <FuncionalityCard title='ScreenReader' description="Active un lector de pantalla con el atajo [Ctrl + Espacio]." tool="reader"></FuncionalityCard>
     </div>
   </div>
 </div>
+
+
+## Herramientas premium para la ceguera
+
+Eyeassist ofrece herramientas de descripción de imágenes y vídeos integradas en el lector de pantalla. 
+
+Con el apoyo de bibliotecas como Salesforce-Lavis y el modelo Blip2 preentrenado, podemos generar descripciones de contenidos multimedia para proporcionar accesibilidad a las personas con discapacidad visual.
