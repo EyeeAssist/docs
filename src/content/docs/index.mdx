@@ -17,12 +17,13 @@ hero:
 ---
 
 import FuncionalityCard from './components/funcionality/FuncionalityCard.astro';
+import FloatText from './components/float-text/FloatText.astro';
 
 ## Interfaz principal
 
 Eyeassist sigue las directrices WCAG para la implementación de su interfaz. Para garantizar su accesibilidad.
 
-![Fly Menu](../../assets/interfaz-principal.png)
+![Main menu](../../assets/interfaz-principal.png)
 
 ## Discapacidades que cubrimos
 Eyeassist ofrece las siguientes características para facilitar la accesibilidad de las personas que entran en el código de clasificación CIE11 9D90 Deficiencia visual, incluida la ceguera y el código 9D44 Deficiencia de la visión de los colores.
@@ -75,6 +76,14 @@ Eyeassist es una biblioteca de código abierto que proporciona las siguientes fu
 
 ## Herramientas premium para la ceguera
 
-Eyeassist ofrece herramientas de descripción de imágenes y vídeos integradas en el lector de pantalla. 
+Eyeassist ofrece generacion de descripciones para contenido multimedia. 
 
+
+## Genera descripciones de imagenes
 Con el apoyo de bibliotecas como Salesforce-Lavis y el modelo Blip2 preentrenado, podemos generar descripciones de contenidos multimedia para proporcionar accesibilidad a las personas con discapacidad visual.
+
+<FloatText text="Un pájaro rojo y verde sentado en lo alto de una valla de madera"></FloatText>
+
+## Genera descripciones para videos 
+
+Con el procesamiento de los vídeos y utilizando ia para generar la descripción de la escena podemos generar una descripción de audio de las escenas que no contiene un contexto audible.
