@@ -1,0 +1,32 @@
+---
+const { text } = Astro.props
+import { Image } from 'astro:assets';
+import myImage from "../../../../assets/australian-king-parrot.jpg";
+---
+
+<style>
+.flotante {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  padding: 10px;
+  background-color: #000000;
+  text-align: center;
+  margin: 0 !important;
+}
+.contenedor {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.image-description {
+  width: 60%;
+}
+</style>
+<div class="contenedor">
+  <Image class="image-description" src={myImage} alt="A description of my image." />
+  <div class="flotante">
+    <p style="font-weight: bold;">"{text}"</p>
+  </div>
+</div>
