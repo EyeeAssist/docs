@@ -1,0 +1,59 @@
+---
+---
+<style>
+.video-sequence-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.video {
+  margin: 0 !important;
+  height: 100%;
+}
+.iframe-video {
+  height: 100% !important;
+}
+.header-sequence {
+  background: rgb(36, 60, 90);
+  color: white;
+  padding: 5px;
+}
+.list-sequence {
+  margin: 0 !important;
+  background: rgb(48, 77, 112) ;
+}
+li:not(.mi-elemento-especial) {
+  /* Agrega aquí tus estilos específicos para los elementos li */
+  /* Por ejemplo, si deseas quitar los decoradores, puedes resetear ciertos estilos */
+  list-style-type: none; /* Elimina los marcadores de lista (viñetas) */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+  /* Otros estilos según tus necesidades */
+}
+ul {
+  padding: 20px;
+}
+</style>
+
+<div class="video-sequence-container">
+  <div class="sequence">
+    <header class="header-sequence">Secuencia a reproducir</header>
+    <div class="list-sequence">
+      <ul>
+        <li>Time: 0.0s - 'una vista aérea de una playa y una ciudad'</li>
+        <li>Time: 10.0s - 'una persona parada en la cima de una montaña'</li>
+        <li>Time: 26.0s - 'una persona sobre una tabla de surf en una costa rocosa'</li>
+        <li>Time: 37.8s - 'un cuerpo de agua verde junto a una playa de arena'</li>
+        <li>Time: 54.0s - 'un río que corre a través de un exuberante campo verde'</li>
+      </ul>
+    </div>
+  </div>
+  <div class="video">
+    <iframe class="iframe-video" width="560" height="315" src="https://www.youtube.com/embed/eCCb9xqeoSI?si=ftm_c9C1Y6uyRJtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
